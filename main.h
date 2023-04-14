@@ -3,9 +3,11 @@
 #include "lab2_arrays_pointers_as_parameters.h"
 #include "lab3_character_arrays_and_pointers.h"
 #include "lab4_2D_arrays.h"
+#include "lab5_multi_dim_array.h"
 
 #define LAB_1	"Basics"
-#define LAB_2	"Passing arrays and Pointers as Function Parameters"
-#define LAB_3	"Character arrays and pointers"
+#define LAB_2	"Passing Arrays and Pointers as Function Parameters"
+#define LAB_3	"Character Arrays and Pointers"
 #define LAB_4	"2D Arrays"
+#define LAB_5	"Multi-Dimentional Arrays"
 

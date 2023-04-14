@@ -10,6 +10,7 @@ int main() {
     std::cout << "-> 2 = Lab 2: " << LAB_2 << std::endl;
     std::cout << "-> 3 = Lab 3: " << LAB_3 << std::endl;
     std::cout << "-> 4 = Lab 4: " << LAB_4 << std::endl;
+    std::cout << "-> 5 = Lab 5: " << LAB_5 << std::endl;
     std::cin >> lab_to_execute;
     std::cout << std::endl << "LABORATORY " << lab_to_execute << ": ";
 
@@ -29,6 +30,10 @@ int main() {
     case 4:
         std::cout << LAB_4 << std::endl << std::endl;
         lab4_2D_arrays_main();
+        break;
+    case 5:
+        std::cout << LAB_5 << std::endl << std::endl;
+        lab5_multi_dim_arrays_main();
         break;
     default:
         std::cout << "NO LAB CHOOSEN";

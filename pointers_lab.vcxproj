@@ -132,6 +132,7 @@
     <ClCompile Include="lab3_character_arrays_and_pointers.cpp" />
     <ClCompile Include="lab4_2D_arrays.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="lab5_multi_dim_array.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lab1_basics.h" />
@@ -139,6 +140,7 @@
     <ClInclude Include="lab3_character_arrays_and_pointers.h" />
     <ClInclude Include="lab4_2D_arrays.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="lab5_multi_dim_array.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

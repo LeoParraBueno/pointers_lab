@@ -7,16 +7,16 @@ void lab4_2D_arrays_main(void) {
 	};
 
 	/*
-	* Accesing just one index of a 2D array returns the address of the fisrt element of the array that starts to be located at that index
+	* Accesing just one index of a 2D array returns the address of the first element of the array that starts to be allocated at that index
 	*/
 	printf("Printing Memory addresses:\n");
 	printf("matrix = 0x%llx\n*matrix = 0x%llx\nmatrix[0] = 0x%llx\n", (unsigned long long)matrix, (unsigned long long) *matrix, (unsigned long long) matrix[0]);
 	printf("matrix[1] = 0x%llx\n", (unsigned long long) *(matrix + 1));
+	printf("matrix[1] = 0x%llx (fail: not an address)\n", (unsigned long long) *(*matrix + 1));
 	printf("*(matrix + 1) = 0x%llx\n", (unsigned long long) matrix[1]);
 	printf("&matrix[1][1] = 0x%llx\n", (unsigned long long) &matrix[1][1]);
 	printf("matrix[1] + 2 = 0x%llx\n", (unsigned long long) (*(matrix + 1) + 2));
-	printf("matrix[1] + 2 = 0x%llx\n", *(matrix + 1) + 2);
-	printf("matrix[1] + 2 = 0x%llx\n", (unsigned long long) matrix[1] + 2);
+	printf("matrix[1] + 2 = 0x%llx (fail: Wrong pointer arithmetic implementation)\n", (unsigned long long) matrix[1] + 2);
 	printf("matrix[1] + 2 = 0x%llx\n\n", matrix[1] + 2);
 	
 	/*
