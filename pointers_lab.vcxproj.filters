@@ -33,6 +33,9 @@
     <ClCompile Include="lab5_multi_dim_array.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="lab6_memory_allocation.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -51,6 +54,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="lab5_multi_dim_array.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="lab6_memory_allocation.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,17 @@
 #include "lab5_multi_dim_array.h"
 
 void lab5_multi_dim_arrays_main(void) {
+	/*
+	* Let:
+	* 
+	* MDA: Multidimentional Array
+	* i: Dimention number
+	* D: Dimention
+	* 
+	* Then:
+	* 
+	* MDA_iD: A multidimentional array of dimention i
+	*/
 	
 	//Three dimensional array
 	int MDA_3D[3][2][2] = {
@@ -42,14 +53,29 @@ void lab5_multi_dim_arrays_main(void) {
 		}
 	};
 
+	printf("Multidimentional arrays for this lab:\n\n");
+	printf("MDA_3D[3][2][2] -> A 3D array of 3 2D arrays of 2 1D array of 2 integers\n");
+	printf("MDA_4D[3][2][2][2] -> A 4D array of 3X2X2X2\n");
+	printf("MDA_5D[2][2][2][2][2] -> A 5D array of 2X2X2X2X2\n\n");
+	
+	printf("Name of multidimentional arrays:\n\n");
+	printf("MDA_3D: int (*)[2][2] (Returns a pointer to a 2 dimentional array 2X2)\n");
+	printf("MDA_4D: int (*)[2][2][2] (Returns a pointer to a 3 dimentional array 2X2X2)\n");
+	printf("MDA_5D: int (*)[2][2][2][2] (Returns a pointer to a 4 dimentional array 2X2X2X2)\n\n");
+
+	printf("Dereferencing name of multidimentional arrays:\n\n");
+	printf("*MDA_3D: int (*)[2] (Returns a pointer to a 1 dimentional array of 2 integers)\n");
+	printf("*MDA_4D: int (*)[2][2] (Returns a pointer to a 2 dimentional array 2X2)\n");
+	printf("*MDA_5D: int (*)[2][2][2] (Returns a pointer to a 3 dimentional array 2X2X2)\n\n");
+	
 	/*
 	* Let i be the max dimension of a multi-dimensional array, then accessing just the i dimension 
 	* of such a multi-dimentional array returns the address of the first element in the first array 
 	* in the dimension 1 at index n; it is &MDA[n]...[z][y][x]
 	* 
-	*     i     3  2  1
-	*     |     |  |  |
-	* MDA[n]...[z][y][x]
+	* Dimentions:        i     3  2  1
+	*                    |     |  |  |
+	*             MDA_iD[n]...[z][y][x]
 	*/
 	printf("Printing Memory addresses (indexing i dimension):\n");
 	printf("MDA_3D:\n");
@@ -104,9 +130,9 @@ void lab5_multi_dim_arrays_main(void) {
 	* multi-dimentional array returns the address of the inner first element in the array 
 	* in the dimension i - 1 at index MDA[n]...[x]
 	* 
-	*     i   i - k
-	*     |     |
-	* MDA[n]...[x]
+	* Dimentions:       i   i - k
+	*                   |     |
+	*            MDA_iD[n]...[x]
 	*/
 	printf("Printing Memory addresses (indexing i - k dimensions):\n");
 	printf("MDA_3D:\n");
@@ -134,9 +160,10 @@ void lab5_multi_dim_arrays_main(void) {
 	printf("**(MDA_3D[1] + 2) = %d\n", *(*(MDA_3D + 1) + 2)[0]);
 	printf("MDA_3D[1][2][0] = %d\n", **(MDA_3D[1] + 2));
 	printf("MDA_3D[2][0][0] = %d\n", MDA_3D[1][2][0]);
-	printf("*(**(*(MDA_3D + 1) + 2) + 1) = %d\n", MDA_3D[1][2][1]);
+	printf("**(*(MDA_3D + 1) + 2) + 4 = %d\n", MDA_3D[1][2][1] + 4);
 	printf("MDA_3D[2][0][1] = %d\n", *(*MDA_3D[2] + 1));
 	printf("*(*(MDA_3D + 2))[1] = %d\n\n", *(*(MDA_3D + 2))[1]);
+	printf("(*(*(MDA_3D + 2)))[1] = %d\n\n", (* (MDA_3D[2]))[1]);
 
 	printf("Passing multi-dimensional arrays as function parameters:\n");
 	passing_3D_array(MDA_3D);

@@ -131,6 +131,7 @@
     <ClCompile Include="lab2_arrays_pointers_as_parameters.cpp" />
     <ClCompile Include="lab3_character_arrays_and_pointers.cpp" />
     <ClCompile Include="lab4_2D_arrays.cpp" />
+    <ClCompile Include="lab6_memory_allocation.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="lab5_multi_dim_array.cpp" />
   </ItemGroup>
@@ -139,6 +140,7 @@
     <ClInclude Include="lab2_arrays_pointers_as_parameters.h" />
     <ClInclude Include="lab3_character_arrays_and_pointers.h" />
     <ClInclude Include="lab4_2D_arrays.h" />
+    <ClInclude Include="lab6_memory_allocation.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="lab5_multi_dim_array.h" />
   </ItemGroup>
